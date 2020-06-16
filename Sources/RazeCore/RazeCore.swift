@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct RazeCore {
+public struct RazeCore {
     
 }
