@@ -29,15 +29,15 @@
 import XCTest
 @testable import RazeCore
 
-final class RazeCoreTests: XCTestCase {
+final class RazeColorTests: XCTestCase {
   func testColorRedEqual() {
-    let color = RazeCore.colorFromHexString("FF0000")
+    let color = RazeCore.Color.fromHexString("FF0000")
     XCTAssertEqual(color, .red)
   }
     
     func testRazeColor() {
-        let color = RazeCore.razeColor
-        XCTAssertEqual(color, RazeCore.colorFromHexString("ff0000"))
+        let color = RazeCore.Color.razeColor
+        XCTAssertEqual(color, RazeCore.Color.fromHexString("ff0000"))
     }
   
   static var allTests = [
